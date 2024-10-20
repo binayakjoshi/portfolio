@@ -1,6 +1,5 @@
 import React from 'react';
-import './AboutMe.css'; // Import the CSS file for styling
-
+import './AboutMe.css'; 
 export const AboutMe = () => {
   return (
     <div className="about-container">
@@ -85,12 +84,6 @@ export const AboutMe = () => {
               View Live Portfolio
             </a>
           </div>
-
-      
-
-
-
-          {/* Add more project cards as needed */}
         </div>
       </section>
 
