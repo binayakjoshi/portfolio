@@ -38,6 +38,14 @@ export const AboutMe = () => {
             >
               View Source Code
             </a>
+            <a
+              href="https://popnbuy.netlify.app/"
+              className="project-source"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live
+            </a>
           </div>
           <div className="project-card">
             <h3 className="project-name">Readly (Bookstore app)</h3>
