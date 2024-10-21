@@ -93,3 +93,11 @@
 .project-source:hover {
   text-decoration: underline;
 }
+.project-card a {
+  display: block; 
+  margin-bottom: 10px;
+}
+
+.project-card a:last-child {
+  margin-bottom: 0; 
+}
