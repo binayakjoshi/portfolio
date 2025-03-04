@@ -48,6 +48,22 @@ export const AboutMe = () => {
             </a>
           </div>
           <div className="project-card">
+            <h3 className="project-name">Audio Atlas (Music Recommendation App)</h3>
+            <p className="project-date">Jan 2025</p>
+            <p className="project-description">
+              A content-based music recommendation system where users can upload an audio file, and the app suggests similar songs using ML-based feature extraction and KNN for recommendations. Built using the MERN stack, Flask, and Spotify API for metadata enrichment.
+            </p>
+            <a
+              href="https://github.com/binayakjoshi/AudioAtlas"
+              className="project-source"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Source Code
+            </a>
+          </div>
+
+          <div className="project-card">
             <h3 className="project-name">Readly (Bookstore app)</h3>
             <p className="project-date">Jan 2024</p>
             <p className="project-description">
