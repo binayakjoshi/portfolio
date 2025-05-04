@@ -1,0 +1,47 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.home-intro {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.resume-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;           
+  font-size: 16px;              
+  cursor: pointer;             
+  transition: background-color 0.3s ease;
+  text-decoration: None;  
+}
+.resume-btn svg {
+  margin-left: 10px;          
+  font-size: 18px;          
+}
+.resume-btn:hover {
+  background-color: #444;
+}

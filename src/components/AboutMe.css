@@ -1,0 +1,108 @@
+
+
+.about-section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: var(--section-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.about-section h2::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 0.25rem;
+  background: var(--accent-color);
+  margin-top: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.about-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem 2rem;
+}
+.about-section ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 10px;
+}
+.about-section ul li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-color);
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section h4 {
+  font-size: 1.25rem;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.contact-list li svg {
+  margin-right: 0.5rem;
+  color: var(--accent-color);
+}
+.contact-list li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-list li a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+}
+
+.dark .about-section h2,
+.dark .about-section h3,
+.dark .about-section h4,
+.dark .about-section li,
+.dark .about-section p,
+.dark .contact-list li a {
+  color: white;
+}
