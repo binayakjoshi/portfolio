@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
-import Button from "./Button";
+import Button from "../components/UI/Button";
 import "./Home.css";
 const Home = () => {
   return (

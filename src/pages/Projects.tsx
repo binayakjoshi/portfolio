@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import { projects } from "../data/projects";
 import { FaGithub, FaCalendarAlt } from "react-icons/fa";
-import Button from "./Button";
+import Button from "../components/UI/Button";
 import { motion } from "framer-motion";
 
 const Projects: React.FC = () => (
