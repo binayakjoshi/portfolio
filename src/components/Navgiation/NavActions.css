@@ -1,0 +1,13 @@
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .nav-actions a {
+    color: var(--text-color);
+    transition: opacity 0.2s;
+  }
+  .nav-actions a:hover {
+    opacity: 0.7;
+  }
+  
