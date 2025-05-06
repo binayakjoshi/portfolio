@@ -35,6 +35,7 @@ const Projects: React.FC = () => (
                   Live
                 </Button>
               )}
+              <Button href="/about">View Details</Button>
             </div>
           </div>
         ))}

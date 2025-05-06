@@ -1,11 +1,18 @@
 .side-drawer {
   position: fixed;
-  left: 0; 
+  left: 0;
   top: 0;
-  width: 45%; 
+  width: 40%;
   height: 100vh;
   background-color: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.26);
-  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 300;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 200ms ease-out, opacity 200ms ease-out;
 }
 
+.side-drawer.visible {
+  transform: translateX(0);
+  opacity: 1;
+}

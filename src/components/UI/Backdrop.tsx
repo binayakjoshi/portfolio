@@ -4,6 +4,7 @@ import "./Backdrop.css";
 type BackdropProps = {
   onClick: () => void;
 };
+
 const Backdrop = (props: BackdropProps) => {
   return ReactDOM.createPortal(
     <div className="backdrop" onClick={props.onClick}></div>,

@@ -1,6 +1,5 @@
 .nav-actions {
     display: flex;
-    align-items: center;
     gap: 2rem;
   }
   .nav-actions a {
