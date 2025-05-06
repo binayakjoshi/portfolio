@@ -3,7 +3,7 @@
 .about-section {
   max-width: 1000px;
   margin: 4rem auto;
-  padding: 2rem;
+  padding: 1rem;
   background: var(--section-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
