@@ -30,12 +30,12 @@ const Projects: React.FC = () => (
                 <FaGithub />
                 Source Code
               </Button>
+              <Button href={`/projects/${p.projectId}`}>View Details</Button>
               {p.live && (
                 <Button href={p.live} target="_blank" rel="noopener noreferrer">
                   Live
                 </Button>
               )}
-              <Button href="/about">View Details</Button>
             </div>
           </div>
         ))}

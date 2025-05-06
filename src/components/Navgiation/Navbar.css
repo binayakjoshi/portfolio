@@ -44,10 +44,16 @@
 .dark .navbar .nav-links .nav-logo{
   color: white
 }
-
+.dark .nav-links li a.active{
+  color : grey
+}
+.dark .nav-links li a:hover{
+  color:grey
+}
 .navigation__menu-btn{
   display: none;
 }
+
 @media (max-width: 700px) {
   .navbar .nav-links{
     display: none;
@@ -66,10 +72,13 @@
     height: 30px;
     width: 40px;
   }
+  .dark .navigation__menu-btn span{
+    background-color:white;
+  }
   .navigation__menu-btn span{
     display: block;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: black;
     border-radius: 2px;
     transition: background-color 0.3s ease;

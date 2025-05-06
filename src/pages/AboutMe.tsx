@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaArrowRight } from "react-icons/fa";
 import "./AboutMe.css";
 
 const AboutMe: React.FC = () => {
@@ -28,14 +28,22 @@ const AboutMe: React.FC = () => {
         </p>
         <ul>
           <li>
-            <strong>Languages: </strong> JavaScript, TypeScript, Python, Java,
-            SQL, C++
+            <strong>
+              <FaArrowRight /> Languages:{" "}
+            </strong>{" "}
+            JavaScript, TypeScript, Python, Java, SQL, C++
           </li>
           <li>
-            <strong>Frameworks:</strong> React, Node.js, Express.js,Next, Django
+            <strong>
+              <FaArrowRight /> Frameworks:
+            </strong>{" "}
+            React, Node.js, Express.js,Next, Django
           </li>
           <li>
-            <strong>Tools:</strong> AWS, Netlify, Heroku
+            <strong>
+              <FaArrowRight /> Tools:
+            </strong>{" "}
+            AWS, Netlify, Heroku
           </li>
         </ul>
         <h3>What I'm Passionate About</h3>
@@ -45,16 +53,22 @@ const AboutMe: React.FC = () => {
           what's possible with web development. Currently, I'm focused on:
         </p>
         <ul>
-          <li>Learning About DevOps and cloud computing</li>
-          <li>Getting in NestJS</li>
+          <li>
+            <FaArrowRight /> Learning About DevOps and cloud computing
+          </li>
+          <li>
+            <FaArrowRight /> Getting in NestJs
+          </li>
         </ul>
         <h4>Contact Information</h4>
         <ul className="contact-list">
           <li>
+            <FaArrowRight />
             <FaEnvelope />
             Email: <a href="mailto:binayakj@pm.me">binayakj@pm.me</a>
           </li>
           <li>
+            <FaArrowRight />
             <FaLinkedin />
             LinkedIn:{" "}
             <a
@@ -66,6 +80,7 @@ const AboutMe: React.FC = () => {
             </a>
           </li>
           <li>
+            <FaArrowRight />
             <FaGithub />
             GitHub:{" "}
             <a

@@ -21,12 +21,14 @@ const Navbar: React.FC = () => {
   return (
     <React.Fragment>
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
-      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
-        <nav className="navigation__drawer_nav">
-          <NavLinks />
-          <NavActions />
-        </nav>
-      </SideDrawer>
+      <div className="drawer">
+        <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+          <nav className="navigation__drawer_nav">
+            <NavLinks />
+            <NavActions />
+          </nav>
+        </SideDrawer>
+      </div>
 
       <nav className="navbar">
         <NavLinks />
