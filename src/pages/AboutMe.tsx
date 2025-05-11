@@ -37,13 +37,13 @@ const AboutMe: React.FC = () => {
             <strong>
               <FaArrowRight /> Frameworks:
             </strong>{" "}
-            React, Node.js, Express.js,Next, Django
+            React, Node.js, Express.js, NextJS
           </li>
           <li>
             <strong>
               <FaArrowRight /> Tools:
             </strong>{" "}
-            AWS, Netlify, Heroku
+            AWS, Git, Github, Netlify, Heroku
           </li>
         </ul>
         <h3>What I'm Passionate About</h3>
