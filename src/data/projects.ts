@@ -58,6 +58,19 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Share Food",
+    date: "May 2025",
+    description:
+      "Share Food is a learning demo application built with Next.js App Router following a Udemy course. It showcases Next.js’s file-system routing, Server & Client Components, and simple in-memory data handling. Use it to explore basic nextjs flow and nested layouts in the App Router.",
+    source: "https://github.com/binayakjoshi/share-food",
+    projectId: "share-food",
+    features: [
+      "Post and browse food and its recipes",
+      "Responsive design for mobile and desktop",
+    ],
+    techStack: ["React", "Typescript", "NextJS", "Node.js", "SQLite"],
+  },
+  {
     name: "Readly",
     date: "January 2024",
     description:
