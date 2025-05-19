@@ -66,7 +66,9 @@ export const projects: Project[] = [
     projectId: "share-food",
     features: [
       "Post and browse food and its recipes",
+      "No external database required—data is held in memory or local mock files for demo purposes.",
       "Responsive design for mobile and desktop",
+      "Demonstrates data fetching in Server Components and interactivity in Client Components.",
     ],
     techStack: ["React", "Typescript", "NextJS", "Node.js", "SQLite"],
   },
