@@ -28,14 +28,14 @@ const AboutMe = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-8 transition-colors duration-200">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+        <div className="bg-white dark:bg-zinc-700 rounded-xl shadow-sm border border-gray-100 dark:border-zinc-500 p-6 mb-8 transition-colors duration-200">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-zinc-100 mb-6">
             Technical Skills
           </h3>
           <div className="space-y-4">
             <div className="flex flex-wrap items-center gap-2">
               <FaArrowRight className="text-black-500 flex-shrink-0" />
-              <strong className="text-gray-900 dark:text-white">
+              <strong className="text-gray-900 dark:text-zinc-100">
                 Languages:
               </strong>
               <div className="flex flex-wrap gap-2">
@@ -43,7 +43,7 @@ const AboutMe = () => {
                   (lang) => (
                     <span
                       key={lang}
-                      className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-lg text-sm font-medium"
+                      className="bg-gray-100 dark:bg-zinc-600 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-lg text-sm font-medium"
                     >
                       {lang}
                     </span>
@@ -62,7 +62,7 @@ const AboutMe = () => {
                   (framework) => (
                     <span
                       key={framework}
-                      className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-lg text-sm font-medium"
+                      className="bg-gray-100 dark:bg-zinc-600 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-lg text-sm font-medium"
                     >
                       {framework}
                     </span>
@@ -79,7 +79,7 @@ const AboutMe = () => {
                   (tool) => (
                     <span
                       key={tool}
-                      className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-lg text-sm font-medium"
+                      className="bg-gray-100 dark:bg-zinc-600 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-lg text-sm font-medium"
                     >
                       {tool}
                     </span>
@@ -91,7 +91,7 @@ const AboutMe = () => {
         </div>
 
         {/* Passion Section */}
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-8 transition-colors duration-200">
+        <div className="bg-white dark:bg-zinc-700 rounded-xl shadow-sm border border-gray-100 dark:border-zinc-500 p-6 mb-8 transition-colors duration-200">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             What I&apos;m Passionate About
           </h3>
@@ -116,7 +116,7 @@ const AboutMe = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 transition-colors duration-200">
+        <div className="bg-white dark:bg-zinc-700 rounded-xl shadow-sm border border-gray-100 dark:border-zinc-500 p-6 transition-colors duration-200">
           <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             Contact Information
           </h4>

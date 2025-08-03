@@ -14,7 +14,7 @@ const ProjectListPage = () => {
           {projects.map((project) => (
             <div
               key={project.projectId}
-              className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-lg hover:border-gray-200 dark:hover:border-gray-600 hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col min-h-[300px]"
+              className="bg-white dark:bg-zinc-700 border border-gray-100 dark:border-zinc-500 rounded-xl shadow-sm hover:shadow-lg hover:border-gray-200 dark:hover:border-gray-600 hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col min-h-[300px]"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 {project.name}
@@ -32,7 +32,7 @@ const ProjectListPage = () => {
               <div className="flex flex-wrap gap-3 mt-auto">
                 <Button
                   href={project.source}
-                  className="bg-white dark:bg-gray-700 text-black dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
+                  className="bg-white dark:bg-zinc-600 text-black dark:text-white border border-gray-300 dark:border-zinc-500 rounded-lg px-4 py-2 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
                 >
                   <FaGithub />
                   Source Code
@@ -40,7 +40,7 @@ const ProjectListPage = () => {
 
                 <Button
                   href={`/projects/${project.projectId}`}
-                  className="bg-white dark:bg-gray-700 text-black dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 text-sm font-medium"
+                  className="bg-white dark:bg-zinc-600 text-black dark:text-white border border-gray-300 dark:border-zinc-500 rounded-lg px-4 py-2 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 text-sm font-medium"
                 >
                   View Details
                 </Button>

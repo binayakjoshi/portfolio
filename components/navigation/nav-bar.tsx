@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaGithub, FaLinkedin, FaSun, FaMoon } from "react-icons/fa";
 import Button from "../custom-elements/button";
 import SideDrawer from "./side-drawer";
@@ -8,13 +8,22 @@ import { useTheme } from "next-themes";
 
 const NavigationBar = () => {
   const [drawerIsOpen, setDrawerIsOpen] = useState<boolean>(false);
+  const [mounted, setMounted] = useState(false);
   const toggleDrawer = () => setDrawerIsOpen((p) => !p);
   const { resolvedTheme, setTheme } = useTheme();
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <header className="w-full bg-white dark:bg-gray-900 shadow-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
+    <header className="w-full bg-white dark:bg-zinc-800 shadow-sm border-b border-gray-200 dark:border-gray-600 transition-colors duration-200">
       <Button
-        className="block sm:hidden fixed top-4 left-4 z-50 inline-flex items-center justify-center p-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg shadow-md cursor-pointer transition-all duration-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="block sm:hidden fixed top-4 left-4 z-50 inline-flex items-center justify-center p-2 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-500 rounded-lg shadow-md cursor-pointer transition-all duration-200 hover:bg-gray-50 dark:hover:bg-gray-600 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500"
         onClick={toggleDrawer}
         aria-label="Menu"
       >
@@ -35,12 +44,12 @@ const NavigationBar = () => {
             </li>
           </ul>
 
-          <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+          <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-600">
             <Button
               onClick={() =>
                 setTheme(resolvedTheme === "dark" ? "light" : "dark")
               }
-              className="flex items-center gap-2 p-2 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 dark:text-gray-300"
+              className="flex items-center gap-2 p-2 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 dark:text-gray-200"
             >
               {resolvedTheme === "dark" ? (
                 <FaSun size={18} />
@@ -91,7 +100,7 @@ const NavigationBar = () => {
                 onClick={() =>
                   setTheme(resolvedTheme === "dark" ? "light" : "dark")
                 }
-                className="p-2 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="p-2 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 {resolvedTheme === "dark" ? (
                   <FaSun size={18} />

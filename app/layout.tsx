@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/navigation/nav-bar";
-import ThemeProviderWrapper from "@/components/themeProviderWrapper";
+import ThemeProviderWrapper from "@/components/theme-provider-wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Binayak Joshi - Portfolio",
-  description: "Full Stack Developer Portfolio",
+  title: "Binayak Joshi",
+  description: "Full Stack Developer",
 };
 
 export default function RootLayout({
@@ -20,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200`}
+        className={`${inter.className} bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100 transition-colors duration-200 min-h-screen`}
       >
         <ThemeProviderWrapper>
           <NavigationBar />
-          <main className="pt-4">{children}</main>
+          <main className="pt-4 bg-white dark:bg-zinc-800 min-h-screen">
+            {children}
+          </main>
         </ThemeProviderWrapper>
       </body>
     </html>

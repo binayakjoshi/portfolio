@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center text-center py-12 px-4 bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="flex flex-col items-center text-center py-12 px-4 bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100 transition-colors duration-200 min-h-screen">
       <Image
         src="/profile.jpeg"
         alt="Binayak Joshi"
@@ -12,7 +12,7 @@ const Home = () => {
         height={160}
         priority
       />
-      <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+      <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">
         Binayak Joshi
       </h1>
       <p className="text-xl max-w-2xl mb-8 text-gray-700 dark:text-gray-300">
@@ -22,7 +22,7 @@ const Home = () => {
       <a
         href="/resume.pdf"
         download
-        className="bg-white dark:bg-gray-700 text-black dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg px-6 py-3 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 font-medium"
+        className="bg-white dark:bg-zinc-700 text-black dark:text-gray-100 border border-gray-300 dark:border-zinc-500 rounded-lg px-6 py-3 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 font-medium"
       >
         Download Resume
         <FaDownload className="ml-2.5 text-lg" />

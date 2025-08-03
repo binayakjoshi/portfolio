@@ -31,7 +31,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
           Back to Projects
         </Button>
 
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 mb-8 transition-colors duration-200">
+        <div className="bg-white dark:bg-zinc-700 rounded-xl shadow-sm border border-gray-100 dark:border-zinc-500 p-8 mb-8 transition-colors duration-200">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             {project.name}
           </h1>
@@ -49,7 +49,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
           <div className="flex flex-wrap gap-4">
             <Button
               href={project.source}
-              className="bg-white dark:bg-gray-700 text-black dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
+              className="bg-white dark:bg-zinc-600 text-black dark:text-white border border-gray-300 dark:border-zinc-500 rounded-lg px-4 py-2 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
             >
               <FaGithub />
               View Source Code
@@ -58,7 +58,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
             {project.live && (
               <Button
                 href={project.live}
-                className="bg-white dark:bg-gray-700 text-black dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg px-6 py-3 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 font-medium"
+                className="bg-white dark:bg-gray-700 text-black dark:text-white border border-gray-300 dark:border-zinc-500 rounded-lg px-6 py-3 hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 font-medium"
               >
                 <FaExternalLinkAlt />
                 Live Demo
@@ -67,7 +67,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
           </div>
         </div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 mb-8 transition-colors duration-200">
+        <div className="bg-white dark:bg-zinc-700 rounded-xl shadow-sm border border-gray-100 dark:border-zinc-500 p-8 mb-8 transition-colors duration-200">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             Key Features
           </h2>
@@ -84,7 +84,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
           </ul>
         </div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 transition-colors duration-200">
+        <div className="bg-white dark:bg-zinc-700 rounded-xl shadow-sm border border-gray-100 dark:border-zinc-500 p-8 transition-colors duration-200">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             Technology Stack
           </h2>
@@ -92,7 +92,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
             {project.techStack.map((tech, index) => (
               <span
                 key={index}
-                className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 dark:border-gray-600 transition-colors duration-200"
+                className="bg-gray-100 dark:bg-zinc-600 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 dark:border-zinc-500 transition-colors duration-200"
               >
                 {tech}
               </span>
