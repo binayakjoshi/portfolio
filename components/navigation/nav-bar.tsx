@@ -4,12 +4,12 @@ import { FaBars, FaGithub, FaLinkedin, FaSun, FaMoon } from "react-icons/fa";
 import Button from "../custom-elements/button";
 import SideDrawer from "./side-drawer";
 import NavLink from "./nav-link";
-import { useTheme } from "../theme-provider";
+import { useTheme } from "next-themes";
 
 const NavigationBar = () => {
   const [drawerIsOpen, setDrawerIsOpen] = useState<boolean>(false);
   const toggleDrawer = () => setDrawerIsOpen((p) => !p);
-  const { theme, toggleTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
     <header className="w-full bg-white dark:bg-gray-900 shadow-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
@@ -37,11 +37,19 @@ const NavigationBar = () => {
 
           <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
             <Button
-              onClick={toggleTheme}
+              onClick={() =>
+                setTheme(resolvedTheme === "dark" ? "light" : "dark")
+              }
               className="flex items-center gap-2 p-2 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 dark:text-gray-300"
             >
-              {theme === "dark" ? <FaSun size={18} /> : <FaMoon size={18} />}
-              <span>{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
+              {resolvedTheme === "dark" ? (
+                <FaSun size={18} />
+              ) : (
+                <FaMoon size={18} />
+              )}
+              <span>
+                {resolvedTheme === "dark" ? "Light Mode" : "Dark Mode"}
+              </span>
             </Button>
           </div>
         </nav>
@@ -80,10 +88,16 @@ const NavigationBar = () => {
             </li>
             <li>
               <Button
-                onClick={toggleTheme}
+                onClick={() =>
+                  setTheme(resolvedTheme === "dark" ? "light" : "dark")
+                }
                 className="p-2 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                {theme === "dark" ? <FaSun size={18} /> : <FaMoon size={18} />}
+                {resolvedTheme === "dark" ? (
+                  <FaSun size={18} />
+                ) : (
+                  <FaMoon size={18} />
+                )}
               </Button>
             </li>
           </ul>
