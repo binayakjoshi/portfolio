@@ -36,6 +36,7 @@ export const projects: Project[] = [
       "Diagflow from google for NLP assistant",
       "Next.js built-in router + React Hook Form for form validation",
     ],
+    live: "https://furever-lemon.vercel.app",
   },
   {
     name: "Pop N'Buy",
