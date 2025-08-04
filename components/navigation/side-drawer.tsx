@@ -18,13 +18,13 @@ const SideDrawer = ({
     <>
       {isOpen && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-gray-300 dark:bg-gray-900 bg-opacity-30 dark:bg-opacity-50 z-[999] transition-colors duration-200"
+          className="fixed top-0 left-0 w-full h-full bg-black/80 dark:bg-zinc-700/80 transition-colors duration-200"
           onClick={onClose}
         />
       )}
       <aside
         className={`
-          fixed top-0 w-[300px] h-full bg-white dark:bg-gray-800 shadow-lg transition-all duration-300 ease-out z-[1000] p-4 border-r border-gray-200 dark:border-gray-700
+          fixed top-0 w-[300px] h-full bg-white dark:bg-zinc-800 shadow-lg transition-all duration-300 ease-out z-[1000] p-4 border-r border-gray-200 dark:border-gray-700
           ${position === "left" ? "left-0" : "right-0"}
           ${
             isOpen
