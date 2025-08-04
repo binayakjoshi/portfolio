@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100 transition-colors duration-200 min-h-screen`}
+        className={`${inter.className} bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100 transition-colors duration-200 min-h-screen`}
       >
         <ThemeProviderWrapper>
           <NavigationBar />
-          <main className="pt-4 bg-white dark:bg-zinc-800 min-h-screen">
+          <main className="pt-4 bg-white dark:bg-zinc-900 min-h-screen">
             {children}
           </main>
         </ThemeProviderWrapper>
