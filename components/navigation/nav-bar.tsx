@@ -73,7 +73,7 @@ const NavigationBar = () => {
             </ul>
           </nav>
 
-          <div className="p-6 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-zinc-800">
+          <div className="p-6 border-t border-gray-200 dark:border-gray-700  dark:bg-zinc-800">
             <div className="mb-4">
               <Button
                 onClick={() =>

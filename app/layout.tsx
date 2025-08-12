@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/navigation/nav-bar";
-import ThemeProviderWrapper from "@/components/theme-provider-wrapper";
+import ThemeProviderWrapper from "@/components/background/theme-provider-wrapper";
+import Footer from "@/components/background/footer";
+import AppBackground from "@/components/background/app-background";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +25,13 @@ export default function RootLayout({
         className={`${inter.className} bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100 transition-colors duration-200 min-h-screen`}
       >
         <ThemeProviderWrapper>
-          <NavigationBar />
+          <div className="relative z-50"><NavigationBar />
+          </div>
+          <AppBackground/>
           <main className="pt-4 bg-white dark:bg-zinc-900 min-h-screen">
             {children}
           </main>
+          <Footer/>
         </ThemeProviderWrapper>
       </body>
     </html>
