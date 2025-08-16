@@ -3,7 +3,7 @@
 import React from 'react';
 import { FaLinkedin, FaEnvelope, FaGithub, FaTwitter } from 'react-icons/fa';
 
-const Footer: React.FC = () => {
+const Footer =  () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               Binayak Joshi
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              © {currentYear} All rights reserved. Built with passion and code.
+              © {currentYear} All rights reserved.
             </p>
           </div>
 
